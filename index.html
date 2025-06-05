@@ -18,7 +18,6 @@
       font-family: 'Plus Jakarta Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: white;
       background: linear-gradient(90deg, #a5a5a5, #9a9a9a, #8f8f8f, #848484, #797979, #6f6f6f, #646464, #5a5a5a);
-      /*background-color: #a6a6a6; /* fallback */
       z-index: 1;
     }
 
@@ -176,16 +175,28 @@
     /* Footer fixed height to prevent growth */
     footer {
       font-size: 0.8rem;
-      opacity: 0.5;
+      opacity: 0.75;
       margin-top: auto;
       padding: 10px 0;
       flex-shrink: 0;
       height: 1.5rem; /* fixed height */
       line-height: 1.5rem;
     }
+
+    input.form-control {
+      min-width: 200px;
+    }
+
+    button.primary {
+      max-width: 120px;
+    }
+
+    .hidden {
+      display: none;
+    }
   </style>
 <!-- MailerLite Universal -->
-<script>
+<script defer>
     (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
     .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
     n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
@@ -196,6 +207,7 @@
 </head>
 <body>
   <main>
+    <h1 class="hidden">Gene Kelly</h1>
     <!-- SVG Logo -->
     <div class="logo" role="img">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 131.2 52.3" style="enable-background:new 0 0 131.2 52.3;" xml:space="preserve">
@@ -208,7 +220,6 @@
 </g>
 </svg>
     </div>
-
     <div class="subtitle">Official website</div>
     <h2>Coming soon</h2>
 
@@ -217,10 +228,10 @@
 
     <!-- Social icons -->
     <nav class="social-icons" aria-label="Social media links">
-      <a href="https://www.instagram.com/genekellylegacy/" target="_blank" rel="noopener" aria-label="Instagram">
+      <a href="https://www.instagram.com/genekellylegacy/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9S287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7s74.7 33.5 74.7 74.7s-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8c-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8s26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9c-26.2-26.2-58-34.4-93.9-36.2c-37-2.1-147.9-2.1-184.9 0c-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9c1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0c35.9-1.7 67.7-9.9 93.9-36.2c26.2-26.2 34.4-58 36.2-93.9c2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6c-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6c-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6c29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6c11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
       </a>
-      <a href="https://www.facebook.com/GeneKellyLegacy/" target="_blank" rel="noopener" aria-label="Facebook">
+      <a href="https://www.facebook.com/GeneKellyLegacy/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="28" viewBox="0 0 320 512"><path d="M80 299.3V512h116V299.3h86.5l18-97.8H196v-34.6c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4.4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8z"/></svg></a>
     </nav>
 
